@@ -14,6 +14,8 @@ public class FLOHsign {
         int j;
         int fTopVert;
         int fBottVert;
+        int hTop;
+        int hBott;
 
         //user input
         height = 10;
@@ -95,7 +97,39 @@ public class FLOHsign {
             System.out.print(on);
         }
         System.out.println();
+        System.out.println();
+
         //H print out
+        hTop = (height-1)/2;
+        if (height % 2 == 0){
+            hBott = hTop+1;
+        }
+        else {
+            hBott = hTop;
+        }
+        //Top of H
+        for (i=0;i<hTop;i++){
+            System.out.print(on);
+            for (j=0;j<width-2;j++){
+                System.out.print(off);
+            }
+            System.out.print(on);
+            System.out.println();
+        }
+        //Middle of H
+        for (i=0;i<width;i++){
+            System.out.print(on);
+        }
+        System.out.println();
+        //Bottom of H
+        for (i=0;i<hBott;i++){
+            System.out.print(on);
+            for (j=0;j<width-2;j++){
+                System.out.print(off);
+            }
+            System.out.print(on);
+            System.out.println();
+        }
 
     }
 }
