@@ -3,6 +3,7 @@
  * DESCRIPTION:
  *
  *****************************************************************************/
+import javax.swing.*;
 public class FLOHsign {
     public static void main(String[] args) {
         //variable declaration
@@ -18,8 +19,8 @@ public class FLOHsign {
         int hBot;
 
         //user input
-        height = 10;
-        width = 10;
+        height = Integer.parseInt(JOptionPane.showInputDialog("Height:"));
+        width = Integer.parseInt(JOptionPane.showInputDialog("Width:"));
 
         //F print out
         //calculate heights
