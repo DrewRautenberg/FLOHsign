@@ -12,10 +12,10 @@ public class FLOHsign {
         char off = '.';
         int i;
         int j;
-        int fTopVert;
-        int fBottVert;
+        int fTopVer;
+        int fBotVer;
         int hTop;
-        int hBott;
+        int hBot;
 
         //user input
         height = 10;
@@ -23,12 +23,11 @@ public class FLOHsign {
 
         //F print out
         //calculate heights
-        fTopVert = (height-2)/2;
-        if (height % 2 == 0){
-            fBottVert = fTopVert;
-        }
-        else {
-            fBottVert = fTopVert + 1;
+        fTopVer = (height - 2) / 2;
+        if (height % 2 == 0) {
+            fBotVer = fTopVer;
+        } else {
+            fBotVer = fTopVer + 1;
         }
         //Top of F
         for (i = 0; i < width; i++) {
@@ -36,25 +35,25 @@ public class FLOHsign {
         }
         System.out.println();
         //Top vertical of F
-        for (i=0;i<fTopVert;i++){
+        for (i = 0; i < fTopVer; i++) {
             System.out.print(on);
-            for (j=0;j<width-1;j++){
+            for (j = 0; j < width - 1; j++) {
                 System.out.print(off);
             }
             System.out.println();
         }
         //Middle horizontal of F
-        for (i=0;i<width/2;i++){
+        for (i = 0; i < width / 2; i++) {
             System.out.print(on);
         }
-        for (j=i;j<width;j++){
+        for (j = i; j < width; j++) {
             System.out.print(off);
         }
         System.out.println();
         //Bottom Vertical of F
-        for (i=0;i<fBottVert;i++){
+        for (i = 0; i < fBotVer; i++) {
             System.out.print(on);
-            for (j=0;j<width-1;j++){
+            for (j = 0; j < width - 1; j++) {
                 System.out.print(off);
             }
             System.out.println();
@@ -63,15 +62,15 @@ public class FLOHsign {
 
         //L print out
         //Top vertical of L
-        for (i=0;i<height-1;i++){
+        for (i = 0; i < height - 1; i++) {
             System.out.print(on);
-            for (j=0;j<width-1;j++){
+            for (j = 0; j < width - 1; j++) {
                 System.out.print(off);
             }
             System.out.println();
         }
         //Bottom of L
-        for (i=0;i<width;i++){
+        for (i = 0; i < width; i++) {
             System.out.print(on);
         }
         System.out.println();
@@ -84,9 +83,9 @@ public class FLOHsign {
         }
         System.out.println();
         //Sides of O
-        for (i = 0; i < height-2; i++) {
+        for (i = 0; i < height - 2; i++) {
             System.out.print(on);
-            for (j=0;j<width-2;j++){
+            for (j = 0; j < width - 2; j++) {
                 System.out.print(off);
             }
             System.out.print(on);
@@ -100,31 +99,30 @@ public class FLOHsign {
         System.out.println();
 
         //H print out
-        hTop = (height-1)/2;
-        if (height % 2 == 0){
-            hBott = hTop+1;
-        }
-        else {
-            hBott = hTop;
+        hTop = (height - 1) / 2;
+        if (height % 2 == 0) {
+            hBot = hTop + 1;
+        } else {
+            hBot = hTop;
         }
         //Top of H
-        for (i=0;i<hTop;i++){
+        for (i = 0; i < hTop; i++) {
             System.out.print(on);
-            for (j=0;j<width-2;j++){
+            for (j = 0; j < width - 2; j++) {
                 System.out.print(off);
             }
             System.out.print(on);
             System.out.println();
         }
         //Middle of H
-        for (i=0;i<width;i++){
+        for (i = 0; i < width; i++) {
             System.out.print(on);
         }
         System.out.println();
         //Bottom of H
-        for (i=0;i<hBott;i++){
+        for (i = 0; i < hBot; i++) {
             System.out.print(on);
-            for (j=0;j<width-2;j++){
+            for (j = 0; j < width - 2; j++) {
                 System.out.print(off);
             }
             System.out.print(on);
