@@ -11,9 +11,21 @@ public class FLOHsign {
         char on = 'X';
         char off = '.';
 
+
         //user input
         height = 10;
         width = 5;
+
+        //F print out
+
+
+
+        //L print out
+
+        //O print out
+
+
+        //H print out
 
     }
 }
