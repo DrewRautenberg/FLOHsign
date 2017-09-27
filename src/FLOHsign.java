@@ -3,7 +3,9 @@
  * DESCRIPTION:
  *
  *****************************************************************************/
+
 import javax.swing.*;
+
 public class FLOHsign {
     public static void main(String[] args) {
         //variable declaration
@@ -100,6 +102,7 @@ public class FLOHsign {
         System.out.println();
 
         //H print out
+        //calculate heights
         hTop = (height - 1) / 2;
         if (height % 2 == 0) {
             hBot = hTop + 1;
@@ -129,6 +132,5 @@ public class FLOHsign {
             System.out.print(on);
             System.out.println();
         }
-
     }
 }
