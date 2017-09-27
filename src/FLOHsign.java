@@ -59,11 +59,21 @@ public class FLOHsign {
         }
         System.out.println();
 
-
-
-
-
         //L print out
+        //Top vertical of L
+        for (i=0;i<height-1;i++){
+            System.out.print(on);
+            for (j=0;j<width-1;j++){
+                System.out.print(off);
+            }
+            System.out.println();
+        }
+        //Bottom of L
+        for (i=0;i<width;i++){
+            System.out.print(on);
+        }
+        System.out.println();
+        System.out.println();
 
         //O print out
         //Top horizontal of O
